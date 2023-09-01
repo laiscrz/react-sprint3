@@ -35,7 +35,7 @@ nav a {
   margin-right: 20px; 
 }
 
-nav a:hover {
+nav .navegacao-links a:hover {
   background-color: #ffffff55;
   border-radius: 5px;
   color: #39ac6f;
@@ -71,6 +71,17 @@ main{
   display: flex;
   align-items: center; 
   padding: 1px 30px; 
+}
+
+#btnLogin span {
+  display: flex; /* Ativa o modo flexbox */
+  align-items: center; /* Alinha verticalmente */
+  gap: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+#btnLogin img {
+  max-width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
 }
 
 

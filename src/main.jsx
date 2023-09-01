@@ -10,6 +10,7 @@ import Servicos from './Router/Servicos/Servicos.jsx'
 import SobreNos from './Router/Sobre Nos/Sobrenos.jsx'
 import Contato from './Router/Contato/Contato.jsx'
 import Login from './Router/Login/login.jsx'
+import Error from './Router/Error/Error.jsx'
 
 const router = createBrowserRouter([
   {

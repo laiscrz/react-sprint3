@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -6,26 +6,24 @@ body {
   font-family: 'Times New Roman', Times, serif;
   background-color: #161616;
 }
-.cabecalho-conteiner{
+
+/*CABEÇALHO*/
+.cabecalho-conteiner {
   background-color: #000000;
   width: 100%;
   height: 120px;
-  margin-top: 0;
   position: fixed;
-  top: 0; 
-  left: 0; 
+  top: 0;
+  left: 0;
 }
 
-
 nav {
-  margin-top: 10px; 
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 8vh;
-  
 }
-
 
 nav a {
   color: white;
@@ -41,14 +39,15 @@ nav .navegacao-links a:hover {
   color: #39ac6f;
 }
 
-
-main{
+main {
+  margin-top: 140px; /* Ajuste conforme necessário */
+  margin-bottom: 60px; /* Adicione uma margem inferior para acomodar o footer */
   display: flex;
   width: 100VW;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  min-height: 70vh; /* Alterei para min-height para garantir que o conteúdo se estenda até o footer */
 }
 
 
@@ -84,17 +83,141 @@ main{
   height: auto;
 }
 
+/*Como funciona*/
+.comofunciona-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #202020;
+  border: 1px solid #1b1b1b;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  & h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #39ac6f;
+    margin-bottom: 20px;
+  }
+
+  & h3 {
+    font-size: 20px;
+    color: #84CF95;
+    margin-top: 20px;
+  }
+
+  & p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+  }
+}
+
+/*Login*/
+form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center; /* Centralize o texto horizontalmente */
+  font-family: 'Archivo Black', sans-serif;
+}
+
+form {
+  padding: 30px;
+  border: 1px solid white;
+  border-radius: 60px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px; /* Ajuste o valor conforme necessário */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+}
+
+.caixa-login {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cadastro-link {
+  color: #fff;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+  background-color: gray;
+  color: white;
+  margin: 0 10px;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: white;
+}
+
+button[type="submit"] {
+  background-color: #84CF95;
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 1.0em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #39ac6f;
+}
+
+.cadastro-link a {
+  color: #39ac6f; 
+}
 
 footer {
+  width: 100%;
+  height: 60px;
   background-color: #5db888;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
-footer p {
+/*RODAPÉ*/
+footer p{
   color: #fff;
   margin: 0 10px;
 }
+
+footer p img{
+  width: 20px;
+}
+
+.icone-redes{
+  width: 50px;
+  height: 50px;
+}
+
+.text-center{
+  text-align: center;
+}
+
 

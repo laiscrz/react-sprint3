@@ -1,0 +1,74 @@
+/*CONTATO*/
+.contato-conteiner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #202020;
+    border: 1px solid #1b1b1b;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+    & h1 {
+      font-size: 28px;
+      color: #39ac6f;
+      margin-bottom: 20px;
+    }
+  
+    & h3 {
+      font-size: 20px;
+      color: #84CF95;
+      margin-top: 20px;
+    }
+  
+    & p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #f0f0f0;
+      margin-bottom: 20px;
+    }
+  
+    .form-contato {
+      border: 1px solid white;
+      border-radius: 60px;
+      width: 700px; /* Aumente o tamanho da largura da borda branca */
+      height: 200px;
+      padding: 50px;
+      & form {
+        width: 700px;
+        margin: auto;
+        padding: auto;
+        display: inline-block;
+        & input,
+        select,
+        textarea {
+          margin-bottom: 10px;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 5px 10px;
+          margin-top: 5px;
+          width: 300px;
+          font-size: 16px;
+        }
+  
+        & button {
+          background-color: #39ac6f;
+          color: #fff;
+          font-size: 18px;
+          border: none;
+          border-radius: 60px;
+          padding: 10px 20px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: #338056;
+          }
+        }
+      }
+    }
+  }

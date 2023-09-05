@@ -1,4 +1,5 @@
 import React from 'react';
+import '/src/Styles/SobreNos.css'
 
 const sections = [
   {

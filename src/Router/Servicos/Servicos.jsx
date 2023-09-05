@@ -1,4 +1,5 @@
 import React from 'react';
+import '/src/Styles/Servicos.css'
 
 // Componente para representar um serviço individual
 function ServicoItem({ imagemSrc, titulo, descricao }) {

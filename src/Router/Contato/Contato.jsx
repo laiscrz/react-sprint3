@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '/src/Styles/Contato.css'
 
 export default function Contato() {
   const [formData, setFormData] = useState({

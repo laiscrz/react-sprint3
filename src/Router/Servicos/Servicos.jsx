@@ -5,7 +5,7 @@ import '/src/Styles/Servicos.css'
 function ServicoItem({ imagemSrc, titulo, descricao }) {
   return (
     <div className="servico-item">
-      <img src={imagemSrc} alt={titulo} />
+      <img src={imagemSrc} alt={titulo} className='imagem-servico'/>
       <h3>{titulo}</h3>
       <p>{descricao}</p>
     </div>

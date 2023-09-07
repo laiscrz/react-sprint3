@@ -52,6 +52,9 @@ export default function SobreNos() {
           </div>
         ))}
       </div>
+      <div className="elipse-lateral">
+        
+      </div>
     </main>
   );
 }

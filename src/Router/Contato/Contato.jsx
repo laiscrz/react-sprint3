@@ -41,7 +41,6 @@ export default function Contato() {
     <main>
       <div className="contato-conteiner">
         <h1>Contato</h1>
-        <h3>Fale Conosco</h3>
         <p>
           Para entrar em contato conosco, por favor, preencha o formulário
           abaixo com suas informações e a sua mensagem. Nós responderemos o mais

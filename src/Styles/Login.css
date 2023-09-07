@@ -38,7 +38,8 @@
   input[type="email"],
   input[type="password"],
   input[type="text"],
-  input[type="number"],select, textarea{
+  input[type="number"],
+  input[type="tel"],input[type="date"],select, textarea{
     width: 100%;
     padding: 10px;
     border: 1px solid white;
@@ -53,6 +54,8 @@
   input[type="password"]::placeholder,
   input[type="text"]::placeholder,
   input[type="number"]::placeholder,
+  input[type= "tel"]::placeholder,
+  input[type= "date"]::placeholder,
   textarea::placeholder {
     color: white;
   }

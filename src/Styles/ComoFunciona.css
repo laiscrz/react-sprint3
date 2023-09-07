@@ -1,30 +1,75 @@
 /*Como funciona*/
 .comofunciona-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #202020;
-    border: 1px solid #1b1b1b;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  
-    & h1 {
-      text-align: center;
-      font-size: 28px;
-      color: #39ac6f;
-      margin-bottom: 20px;
-    }
-  
-    & h3 {
-      font-size: 20px;
-      color: #84CF95;
-      margin-top: 20px;
-    }
-  
-    & p {
-      font-size: 18px;
-      line-height: 1.5;
-      color: #f0f0f0;
-      margin-bottom: 20px;
-    }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #202020;
+  border: 1px solid #1b1b1b;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  & h1 {
+    text-align: center;
+    font-size: 28px;
+    background-color: #84CF95;
+    border-radius: 60px;
+    color: white;
+    margin-bottom: 20px;
   }
+
+  & h3 {
+    font-size: 20px;
+    color: #97e9aa;
+    margin-top: 20px;
+  }
+
+  & p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+  }
+}
+
+.elipse-superior {
+  width: 295px; /* Largura da elipse (ou do círculo) */
+  height: 281px; /* Altura da elipse (ou do círculo) - mesma dimensão da largura */
+  border-radius: 50%; /* 50% para o raio horizontal e vertical para criar um círculo */
+  border: 2px solid #39ac6f; /* Adiciona uma borda verde */
+  position: absolute; /* Posiciona absolutamente no canto superior esquerdo */
+  top: 80px; /* Alinha com o topo */
+  right: -50px; /* Alinha com a esquerda */
+  background: none; /* Remove a cor de fundo */
+  z-index: -1; /* Coloca a elipse atrás de outros elementos, como a sua header */
+  
+}
+
+.elipse-superior img{
+  width: 170px; /* Largura da imagem */
+  height: 140px; /* Altura da imagem */
+  position: absolute; /* Posiciona absolutamente dentro da elipse */
+  top: 50%; /* Move a imagem 50% para baixo em relação ao topo da elipse */
+  left: 50%; /* Move a imagem 50% para a direita em relação à esquerda da elipse */
+  transform: translate(-50%, -50%); /* Centraliza a imagem verticalmente e horizontalmente */
+}
+
+.elipse-inferior {
+  width: 295px; /* Largura da elipse (ou do círculo) */
+  height: 281px; /* Altura da elipse (ou do círculo) - mesma dimensão da largura */
+  border-radius: 50%; /* 50% para o raio horizontal e vertical para criar um círculo */
+  border: 2px solid #39ac6f; /* Adiciona uma borda verde */
+  position: absolute; /* Posiciona absolutamente no canto inferior esquerdo */
+  bottom: -350px; /* Alinha com a parte inferior */
+  left: -50px; /* Alinha com a esquerda */
+  background: none; /* Remove a cor de fundo */
+  z-index: -1; /* Coloca a elipse atrás de outros elementos, como a sua header */
+}
+
+.elipse-inferior img {
+  width: 170px; /* Largura da imagem */
+  height: 140px; /* Altura da imagem */
+  position: absolute; /* Posiciona absolutamente dentro da elipse */
+  top: 50%; /* Move a imagem 50% para baixo em relação ao topo da elipse */
+  left: 50%; /* Move a imagem 50% para a direita em relação à esquerda da elipse */
+  transform: translate(-50%, -50%); /* Centraliza a imagem verticalmente e horizontalmente */
+}

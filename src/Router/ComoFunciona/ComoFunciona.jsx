@@ -13,6 +13,9 @@ const sections = [
 export default function Comofunciona() {
   return (
     <main>
+       <div className="elipse-superior">
+        <img src="src/image/comofunc_imageUm.jpg" alt="Homem Analisando Bike" />
+       </div>
       <div className="comofunciona-container">
         <h1>Como Funciona</h1>
         {sections.map((section, index) => (
@@ -22,6 +25,9 @@ export default function Comofunciona() {
           </div>
         ))}
       </div>
+      <div className="elipse-inferior">
+        <img src="src/image/comofunc_imageDois.png" alt="Homem Analisando Bike" />
+       </div>
     </main>
   );
 }

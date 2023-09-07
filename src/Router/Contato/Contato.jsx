@@ -39,6 +39,9 @@ export default function Contato() {
 
   return (
     <main>
+      <div className="elipse-superior">
+        
+      </div>
       <div className="contato-conteiner">
         <h1>Contato</h1>
         <p>
@@ -50,7 +53,7 @@ export default function Contato() {
           construtivas para melhorar nossos produtos e serviços. Obrigado por
           escolher a InovaX.
         </p>
-        <h3>Formulário para Contato</h3>
+        <h3>Formulário para Contato</h3><br />
         <div className="form-contato">
           <form onSubmit={handleSubmit}>
             <input

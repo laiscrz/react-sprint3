@@ -36,8 +36,12 @@ const sections = [
 export default function SobreNos() {
   return (
     <main>
+      
       <div className="sobrenos-conteiner">
         <h1>Sobre Nós</h1>
+        <div className="logoInov-faix">
+          <img src="src/image/logoInovax_faixada.png" alt="Faixada da Logo da InovaX" />
+        </div>
         {sections.map((section, index) => (
           <div key={index}>
             <h3>{section.title}</h3>
@@ -53,7 +57,7 @@ export default function SobreNos() {
         ))}
       </div>
       <div className="elipse-lateral">
-        
+      
       </div>
     </main>
   );

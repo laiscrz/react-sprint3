@@ -51,7 +51,15 @@
   border: 2px solid #39ac6f; /* Adiciona uma borda verde */
   position: absolute; /* Posiciona absolutamente no canto superior esquerdo */
   top: 50%; /* Alinha com o topo */
-  right: -120px; /* Alinha com a esquerda */
+  right: -100px; /* Alinha com a esquerda */
   background: none; /* Remove a cor de fundo */
   z-index: -1; /* Coloca a elipse atrás de outros elementos, como a sua header */
+}
+.logoInov-faix{
+  text-align: center;
+}
+
+.logoInov-faix img {
+  width: 180px; /* Largura da imagem */
+  height: 140px; /* Altura da imagem */
 }

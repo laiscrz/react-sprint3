@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+
+.home-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .inicio-home {
     display: flex;
     align-items: center;
@@ -10,12 +19,16 @@
 
     & h1 {
         color: aliceblue;
+        z-index: -1;
+        font-family: 'Playfair Display', serif;
     }
 
     & h2 {
         color: #84CF95;
         position: absolute;
         left: 400px;
+        z-index: -1;
+        font-family: 'Playfair Display', serif;
     }
 }
 
@@ -55,7 +68,42 @@
     border: 2px solid white;
     margin-right: 20px;
     position: absolute;
-    top: 200px;
+    top: 180px;
     right: 280px;
     z-index: -1;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+.carousel img {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.feedbackclie-destaq {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #202020;
+    border: 1px solid #1b1b1b;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 200px;
+    & h1{
+        color: #84CF95;
+        font-size: 1.5em;
+        font-family: 'Playfair Display', serif;
+    }
+
+    & p{
+        color: #fff;
+    }
 }

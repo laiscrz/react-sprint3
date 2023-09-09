@@ -1,0 +1,61 @@
+.inicio-home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.frase-destaq {
+    margin-bottom: 50px;
+    font-size: 1.5em;
+
+    & h1 {
+        color: aliceblue;
+    }
+
+    & h2 {
+        color: #84CF95;
+        position: absolute;
+        left: 400px;
+    }
+}
+
+
+& .btn-saibamais button {
+    background-color: #39ac6f;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+
+    &:hover {
+        background-color: #338056;
+    }
+}
+
+.destaq-bicle {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.destaq-bicle img {
+    width: 427px;
+    height: 369px;
+}
+
+
+.quadrad-home {
+    width: 427px;
+    height: 369px;
+    background: none;
+    border: 2px solid white;
+    margin-right: 20px;
+    position: absolute;
+    top: 200px;
+    right: 280px;
+    z-index: -1;
+}

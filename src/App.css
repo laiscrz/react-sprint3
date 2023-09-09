@@ -41,14 +41,14 @@ nav .navegacao-links a:hover {
 }
 
 main {
-  margin-top: 140px; /* Ajuste conforme necessário */
-  margin-bottom: 60px; /* Adicione uma margem inferior para acomodar o footer */
+  margin-top: 140px; 
+  margin-bottom: 60px; 
   display: flex;
   width: 100VW;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 70vh; /* Alterei para min-height para garantir que o conteúdo se estenda até o footer */
+  min-height: 70vh; 
 }
 
 
@@ -74,19 +74,59 @@ main {
 }
 
 #btnLogin span {
-  display: flex; /* Ativa o modo flexbox */
-  align-items: center; /* Alinha verticalmente */
-  gap: 10px; /* Espaçamento entre o ícone e o texto */
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
 }
 
 #btnLogin img {
-  max-width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+  max-width: 30px;
   height: auto;
 }
 
 
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="tel"],input[type="date"],select, textarea{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  margin: 0 10px;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="text"]::placeholder,
+input[type="number"]::placeholder,
+input[type= "tel"]::placeholder,
+input[type= "date"]::placeholder,
+textarea::placeholder {
+  color: white;
+}
+
+button[type="submit"] {
+  background-color: #84CF95;
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 1.0em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #39ac6f;
+}
+
+
 /*RODAPÉ*/
-/* RODAPÉ */
 footer {
   width: 100%;
   height: 60px;

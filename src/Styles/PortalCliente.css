@@ -1,0 +1,237 @@
+/* Estilo para o conteúdo do PortalCliente */
+.portalclie-conteiner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #202020;
+    border: 1px solid #1b1b1b;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.portalclie-conteiner h1 {
+    text-align: center;
+    font-size: 28px;
+    background-color: #74ba84;
+    border-radius: 60px;
+    color: white;
+    margin-bottom: 20px;
+    width: 100%;
+    /* Ocupa 100% da largura do elemento pai */
+    padding: 10px;
+    /* Adicionando algum espaço interno para o texto ficar centralizado verticalmente */
+    display: block;
+    /* Defina o h1 como bloco de nível completo */
+}
+
+.portalclie-conteiner p {
+    color: #ffffff;
+}
+
+.menu-options {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que as opções se ajustem automaticamente à largura do conteiner */
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.menu-option {
+    background-color: #2d2d2d;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.33% - 20px);
+    /* Ajusta a largura das opções para que três caibam por linha, com uma margem entre elas */
+    transition: transform 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.menu-option:hover {
+    transform: translateY(-5px);
+}
+
+.menu-image {
+    width: 100px;
+    /* Defina o tamanho desejado para a imagem */
+    height: 100px;
+    /* Defina o tamanho desejado para a imagem */
+    margin-bottom: 10px;
+}
+
+.menu-text {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.portalclie-conteiner button:hover {
+    background-color: #338056;
+}
+
+.button-voltar-menu {
+
+    background-color: #39ac6f;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    margin-right: 25px;
+
+    &:hover {
+        background-color: #338056;
+    }
+}
+
+.solic-vist {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+
+    & h2 {
+        font-size: 28px;
+        color: #39ac6f;
+        margin-bottom: 20px;
+    }
+
+    & form {
+        width: 700px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+
+        & label {
+            color: aliceblue;
+        }
+
+        & .form-group {
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        & input,
+        & select,
+        & textarea {
+            margin-bottom: 10px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-top: 5px;
+            width: 260px;
+            font-size: 16px;
+            background-color: gray;
+            border: 1px solid white;
+        }
+
+        & textarea {
+            width: 500px;
+        }
+
+        & .button-container {
+            margin-top: 100px;
+        }
+
+        & button {
+            background-color: #39ac6f;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 60px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+
+            &:hover {
+                background-color: #338056;
+            }
+
+        }
+    }
+}
+
+.acompanhar-vist,.histo-vist {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+
+    & h2 {
+        font-size: 28px;
+        color: #39ac6f;
+        margin-bottom: 20px;
+    }
+
+    & table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+
+        & th, & td {
+            padding: 10px;
+            border: 1px solid white;
+        }
+
+        & th {
+            background-color: #39ac6f;
+            color: white;
+        }
+
+        & td {
+            background-color: rgb(91, 91, 91);
+            color: white;
+        }
+        & td button.ver-detalhes , button.ver-diagnostico{
+            /* Estilo para o botão "Ver Detalhes" dentro das células da tabela */
+            background-color: #488757; /* Cor de fundo azul */
+            margin-left: 10px; /* Espaçamento à esquerda */
+            color: #fff;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            padding: 6px 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    }
+
+    & button .ver-detalhes, button .ver-diagnostico { /* Estilo para o botão "Ver Detalhes" */
+        background-color: #338056; /* Cor de fundo azul */
+        margin-left: 10px; /* Espaçamento à esquerda */
+    }
+
+    & .button-container {
+        margin-top: 20px;
+
+        & button {
+            background-color: #39ac6f;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 60px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+
+            &:hover {
+                background-color: #338056;
+            }
+        }
+    }
+}
+

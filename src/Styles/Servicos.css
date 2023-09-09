@@ -1,6 +1,6 @@
 /* Estilização para os serviços */
 .servicos-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   background-color: #202020;
@@ -10,7 +10,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* Centraliza horizontalmente os elementos filhos */
   text-align: center;
 
   & h1 {
@@ -25,7 +24,6 @@
 
   & .servico-item {
     flex: 0 0 calc(50% - 20px);
-    /* Cada serviço ocupará 50% do espaço horizontal disponível */
     margin-bottom: 20px;
     padding: 20px;
     background-color: #2d2d2d;
@@ -36,14 +34,12 @@
 
     & h3 {
       font-size: 16px;
-      /* Tamanho do título reduzido */
       margin-bottom: 10px;
       color: #84CF95;
     }
 
     & p {
       font-size: 14px;
-      /* Tamanho da descrição reduzido */
       color: #f0f0f0;
     }
   }

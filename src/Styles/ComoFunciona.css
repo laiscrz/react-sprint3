@@ -32,44 +32,44 @@
 }
 
 .elipse-superior {
-  width: 295px; /* Largura da elipse (ou do círculo) */
-  height: 281px; /* Altura da elipse (ou do círculo) - mesma dimensão da largura */
-  border-radius: 50%; /* 50% para o raio horizontal e vertical para criar um círculo */
-  border: 2px solid #39ac6f; /* Adiciona uma borda verde */
-  position: absolute; /* Posiciona absolutamente no canto superior esquerdo */
-  top: 80px; /* Alinha com o topo */
-  right: -50px; /* Alinha com a esquerda */
-  background: none; /* Remove a cor de fundo */
-  z-index: -1; /* Coloca a elipse atrás de outros elementos, como a sua header */
+  width: 295px;
+  height: 281px;
+  border-radius: 50%;
+  border: 2px solid #39ac6f; 
+  position: absolute; 
+  top: 80px;
+  right: -50px;
+  background: none;
+  z-index: -1;
   
 }
 
 .elipse-superior img{
-  width: 170px; /* Largura da imagem */
-  height: 140px; /* Altura da imagem */
-  position: absolute; /* Posiciona absolutamente dentro da elipse */
-  top: 50%; /* Move a imagem 50% para baixo em relação ao topo da elipse */
-  left: 50%; /* Move a imagem 50% para a direita em relação à esquerda da elipse */
-  transform: translate(-50%, -50%); /* Centraliza a imagem verticalmente e horizontalmente */
+  width: 175px;
+  height: 140px;
+  position: absolute;
+  top: 55%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
 }
 
 .elipse-inferior {
-  width: 295px; /* Largura da elipse (ou do círculo) */
-  height: 281px; /* Altura da elipse (ou do círculo) - mesma dimensão da largura */
-  border-radius: 50%; /* 50% para o raio horizontal e vertical para criar um círculo */
-  border: 2px solid #39ac6f; /* Adiciona uma borda verde */
-  position: absolute; /* Posiciona absolutamente no canto inferior esquerdo */
-  bottom: -350px; /* Alinha com a parte inferior */
-  left: -50px; /* Alinha com a esquerda */
-  background: none; /* Remove a cor de fundo */
-  z-index: -1; /* Coloca a elipse atrás de outros elementos, como a sua header */
+  width: 295px;
+  height: 281px;
+  border-radius: 50%;
+  border: 2px solid #39ac6f;
+  position: absolute;
+  bottom: -270px;
+  left: -50px;
+  background: none;
+  z-index: -1;
 }
 
 .elipse-inferior img {
-  width: 170px; /* Largura da imagem */
-  height: 140px; /* Altura da imagem */
-  position: absolute; /* Posiciona absolutamente dentro da elipse */
-  top: 50%; /* Move a imagem 50% para baixo em relação ao topo da elipse */
-  left: 50%; /* Move a imagem 50% para a direita em relação à esquerda da elipse */
-  transform: translate(-50%, -50%); /* Centraliza a imagem verticalmente e horizontalmente */
+  width: 170px;
+  height: 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

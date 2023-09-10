@@ -45,21 +45,57 @@
 }
 
 .elipse-lateral {
-  width: 295px; /* Largura da elipse (ou do círculo) */
-  height: 281px; /* Altura da elipse (ou do círculo) - mesma dimensão da largura */
-  border-radius: 50%; /* 50% para o raio horizontal e vertical para criar um círculo */
-  border: 2px solid #39ac6f; /* Adiciona uma borda verde */
-  position: absolute; /* Posiciona absolutamente no canto superior esquerdo */
-  top: 50%; /* Alinha com o topo */
-  right: -100px; /* Alinha com a esquerda */
-  background: none; /* Remove a cor de fundo */
-  z-index: -1; /* Coloca a elipse atrás de outros elementos, como a sua header */
+  width: 295px;
+  /* Largura da elipse (ou do círculo) */
+  height: 281px;
+  /* Altura da elipse (ou do círculo) - mesma dimensão da largura */
+  border-radius: 50%;
+  /* 50% para o raio horizontal e vertical para criar um círculo */
+  border: 2px solid #39ac6f;
+  /* Adiciona uma borda verde */
+  position: absolute;
+  /* Posiciona absolutamente no canto superior esquerdo */
+  top: 50%;
+  /* Alinha com o topo */
+  right: -100px;
+  /* Alinha com a esquerda */
+  background: none;
+  /* Remove a cor de fundo */
+  z-index: -1;
+  /* Coloca a elipse atrás de outros elementos, como a sua header */
 }
-.logoInov-faix{
+
+.logoInov-faix {
   text-align: center;
 }
 
 .logoInov-faix img {
-  width: 180px; /* Largura da imagem */
-  height: 140px; /* Altura da imagem */
+  width: 180px;
+  /* Largura da imagem */
+  height: 140px;
+  /* Altura da imagem */
+}
+
+@media (max-width: 600px) {
+  .sobrenos-conteiner {
+    max-width: 400px;
+    padding: 20px;
+    margin-top: 5px;
+
+    & h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    & h3 {
+      font-size: 15px;
+      margin-top: 20px;
+    }
+  
+    & p {
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+  }
+
 }

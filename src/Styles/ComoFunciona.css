@@ -73,3 +73,50 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Extra small devices (phones, 600px e abaixo) */
+@media (max-width: 600px){
+  .comofunciona-container {
+      max-width: 400px;
+      padding: 10px;
+
+      & h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+    
+      & h3 {
+        font-size: 15px;
+        margin-top: 20px;
+      }
+    
+      & p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+  }
+
+  .elipse-superior {
+    width: 10px;
+    height: 150px;
+    top: 20px;
+    right: 10px; 
+  }
+
+  .elipse-superior img{
+    display: none;
+
+  }
+
+  .elipse-inferior {
+    width: 275px;
+    height: 261px;
+    bottom: -300px;
+    left: -50px;
+  }
+  
+  .elipse-inferior img {
+    display: none;
+  }
+}

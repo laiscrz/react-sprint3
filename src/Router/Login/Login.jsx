@@ -47,15 +47,17 @@ export default function Login() {
               </div>
 
               <div className="container-login-form-btn">
-                <button className="login-form-btn" type="submit">
-                  Entrar
-                </button>
+                <Link to='/PortalCliente'>
+                  <span><button className="login-form-btn" type="submit">
+                    Entrar
+                  </button></span>
+                </Link>
               </div>
 
               <ul className="login-utils">
                 <li className="margin-bottom-8 margin-top-8">
                   <span className="text1">
-                    Não tem uma conta? 
+                    Não tem uma conta?
                   </span>
 
                   <Link to="/cadastro" className="text2">

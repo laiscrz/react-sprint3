@@ -1,7 +1,9 @@
 import React from 'react';
 import '/src/Styles/Home.css';
 import {Link} from 'react-router-dom';
-import Carousel from '../../components/Carousel';
+import Carrossel from '../../components/Carrossel';
+
+
 
 
 export default function Home() {
@@ -36,7 +38,7 @@ export default function Home() {
                 <section className="feedbackclie-destaq">
                     <h1>FeedBack de Destaques</h1><br />
                     <p>Aqui estão alguns dos comentários e feedbacks de nossos clientes satisfeitos:</p><br />
-                    <Carousel images={images} />
+                    <Carrossel imagens={images} />
                 </section>
             </div>
         </main>

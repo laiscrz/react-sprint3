@@ -99,8 +99,53 @@
   right: -50px;
   /* Alinha com a esquerda */
   background: none;
-  /* Remove a cor de fundo */
   z-index: -1;
-  /* Coloca a elipse atrás de outros elementos, como a sua header */
 
+}
+
+@media (max-width: 600px) {
+  .contato-conteiner {
+    max-width: 400px;
+    padding: 20px;
+    margin-top: 5px;
+
+    & h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    & h3 {
+      font-size: 15px;
+      margin-top: 20px;
+    }
+
+    & p {
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .form-contato {
+      width: 100%;
+      /* Use 100% para que o formulário ocupe todo o espaço disponível */
+      padding: 10px;
+
+      & form {
+        width: 280px;
+
+        & input,
+        select,
+        textarea {
+          width: 100%;
+          font-size: 13px;
+
+        }
+
+        & button {
+          font-size: 13px;
+          width: 100px;
+        }
+      }
+    }
+  }
 }

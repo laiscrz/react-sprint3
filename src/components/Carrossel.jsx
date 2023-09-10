@@ -6,7 +6,7 @@ const Carrossel = ({ imagens }) => {
   useEffect(() => {
     const intervalo = setInterval(() => {
       setIndiceImagemAtual((indiceAnterior) => (indiceAnterior + 1) % imagens.length);
-    }, 3000);
+    }, 3000); 
 
     return () => {
       clearInterval(intervalo);

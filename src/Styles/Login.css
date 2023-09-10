@@ -1,46 +1,4 @@
 /*Login*/
-/* .form-login {
-    padding: 30px;
-    border: 1px solid white;
-    border-radius: 60px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 300px; 
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 300px;
-    & h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-      color: white;
-      text-align: center; 
-      font-family: 'Archivo Black', sans-serif;
-    }
-    
-  }
-  
-  .caixa-login {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .cadastro-link {
-    color: #fff;
-  }
-  
-
-  
-  .cadastro-link a {
-    color: #39ac6f; 
-  }  */
-
 * {
   margin: 0px;
   padding: 0px;
@@ -223,6 +181,10 @@ button:hover {
   width: 100%;
   display: flex;
   justify-content: center;
+
+  & a{
+    color: white;
+  }
 }
 
 .login-form-btn {
@@ -290,4 +252,43 @@ a:hover {
   top: 45%;
   transform: translateY(-50%);
   left: 0;
+}
+
+
+/* Tamanho da fonte em dispositivos menores (por exemplo, 600px ou menos) */
+@media (max-width: 600px) {
+  .login-form-title {
+    font-size: 28px; 
+  }
+
+  .input-form {
+    font-size: 16px;
+    height: 42px; 
+  }
+
+  .focus-input-form::after {
+    top: 10px;
+    font-size: 12px; 
+  }
+
+  .login-form-btn {
+    font-size: 14px; 
+    height: 40px; 
+  }
+
+
+  a {
+    font-size: 12px;
+  }
+
+
+  .login-utils {
+    margin-top: 10px;
+  }
+
+  .login-utils li::before {
+    width: 3px; 
+    height: 3px;
+    top: 40%;
+  }
 }

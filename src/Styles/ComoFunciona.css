@@ -35,21 +35,21 @@
   width: 295px;
   height: 281px;
   border-radius: 50%;
-  border: 2px solid #39ac6f; 
-  position: absolute; 
+  border: 2px solid #39ac6f;
+  position: absolute;
   top: 80px;
   right: -50px;
   background: none;
   z-index: -1;
-  
+
 }
 
-.elipse-superior img{
+.elipse-superior img {
   width: 175px;
   height: 140px;
   position: absolute;
   top: 55%;
-  left: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -59,7 +59,7 @@
   border-radius: 50%;
   border: 2px solid #39ac6f;
   position: absolute;
-  bottom: -270px;
+  bottom: -240px;
   left: -50px;
   background: none;
   z-index: -1;
@@ -74,37 +74,37 @@
   transform: translate(-50%, -50%);
 }
 
-/* Extra small devices (phones, 600px e abaixo) */
-@media (max-width: 600px){
+/* dispositivos menores (por exemplo, Smartphones) */
+@media (max-width: 600px) {
   .comofunciona-container {
-      max-width: 400px;
-      padding: 10px;
+    max-width: 400px;
+    padding: 10px;
 
-      & h1 {
-        font-size: 24px;
-        margin-bottom: 5px;
-      }
-    
-      & h3 {
-        font-size: 15px;
-        margin-top: 20px;
-      }
-    
-      & p {
-        font-size: 13px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-      }
+    & h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    & h3 {
+      font-size: 15px;
+      margin-top: 20px;
+    }
+
+    & p {
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
   }
 
   .elipse-superior {
     width: 10px;
     height: 150px;
     top: 20px;
-    right: 10px; 
+    right: 10px;
   }
 
-  .elipse-superior img{
+  .elipse-superior img {
     display: none;
 
   }
@@ -115,7 +115,103 @@
     bottom: -300px;
     left: -50px;
   }
-  
+
+  .elipse-inferior img {
+    display: none;
+  }
+}
+
+/* dispositivos medios (por exemplo, Tablets) */
+@media (max-width: 768px) {
+  .comofunciona-container {
+    max-width: 550px;
+    padding: 20px;
+    
+
+    & h1 {
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+
+    & h3 {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    & p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+  }
+
+  .elipse-superior {
+    width: 10px;
+    height: 150px;
+    top: 20px;
+    right: 10px;
+  }
+
+  .elipse-superior img {
+    display: none;
+
+  }
+
+  .elipse-inferior {
+    width: 275px;
+    height: 261px;
+    bottom: -250px;
+    left: -50px;
+  }
+
+  .elipse-inferior img {
+    display: none;
+  }
+}
+
+/* dispositivos grandes (por exemplo, Desktops) */
+@media (max-width: 992px) {
+  .comofunciona-container {
+    max-width: 650px;
+    padding: 20px;
+    
+
+    & h1 {
+      font-size: 27px;
+      margin-bottom: 5px;
+    }
+
+    & h3 {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    & p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+  }
+
+  .elipse-superior {
+    width: 10px;
+    height: 150px;
+    top: 20px;
+    right: 10px;
+  }
+
+  .elipse-superior img {
+    display: none;
+
+  }
+
+  .elipse-inferior {
+    width: 275px;
+    height: 261px;
+    bottom: -240px;
+    left: -50px;
+  }
+
   .elipse-inferior img {
     display: none;
   }

@@ -20,11 +20,8 @@
     color: white;
     margin-bottom: 20px;
     width: 100%;
-    /* Ocupa 100% da largura do elemento pai */
     padding: 10px;
-    /* Adicionando algum espaço interno para o texto ficar centralizado verticalmente */
     display: block;
-    /* Defina o h1 como bloco de nível completo */
 }
 
 .portalclie-conteiner p {
@@ -46,7 +43,6 @@
     padding: 10px;
     text-align: center;
     width: calc(25% - 20px);
-    /* Ajuste a largura para ocupar 25% do espaço */
     transition: transform 0.2s ease-in-out;
     box-sizing: border-box;
 }
@@ -57,9 +53,7 @@
 
 .menu-image {
     width: 100px;
-    /* Defina o tamanho desejado para a imagem */
     height: 100px;
-    /* Defina o tamanho desejado para a imagem */
     margin-bottom: 10px;
 }
 
@@ -201,11 +195,8 @@
 
         & td button.ver-detalhes,
         button.ver-diagnostico {
-            /* Estilo para o botão "Ver Detalhes" dentro das células da tabela */
             background-color: #488757;
-            /* Cor de fundo azul */
             margin-left: 10px;
-            /* Espaçamento à esquerda */
             color: #fff;
             font-size: 14px;
             border: none;
@@ -218,11 +209,8 @@
 
     & button .ver-detalhes,
     button .ver-diagnostico {
-        /* Estilo para o botão "Ver Detalhes" */
         background-color: #338056;
-        /* Cor de fundo azul */
         margin-left: 10px;
-        /* Espaçamento à esquerda */
     }
 
     & .button-container {
@@ -246,14 +234,11 @@
     }
 }
 
-/* Estilos para a página FAQ */
 .faq-conteiner,
 .suporte-conteiner {
     padding: 20px;
     text-align: left;
-    /* Alinhar o texto à esquerda */
     color: #488757;
-    /* Alterar a cor do texto para legibilidade */
 
     & h2 {
         font-size: 28px;
@@ -285,7 +270,6 @@
         color: #ddd;
     }
 
-    /* Estilos para botões dentro da FAQ */
     & .button-container {
         margin-top: 20px;
         text-align: center;
@@ -305,12 +289,9 @@
                 background-color: #338056;
             }
 
-            /* Estilos para links dentro da FAQ */
             & a {
                 color: #39ac6f;
-                /* Cor dos links */
                 text-decoration: underline;
-                /* Adicionar sublinhado a links */
             }
         }
 
@@ -329,7 +310,6 @@
     margin-top: 20px;
     display: block;
     margin: 0 auto;
-    /* Centralizar o botão horizontalmente */
     width: 200px;
     height: 45px;
 
@@ -349,7 +329,7 @@
     }
 }
 
-/* Tamanho em dispositivos menores (por exemplo, 600px ou menos) */
+/* dispositivos menores (por exemplo, Smartphones) */
 @media (max-width: 600px) {
     .portalclie-conteiner {
         max-width: 500px;
@@ -428,6 +408,116 @@
 
                 }
             }
+        }
+    }
+}
+
+/* dispositivos medios (por exemplo, Tablets) */
+@media (max-width: 768px){
+    .portalclie-conteiner {
+        max-width: 600px;
+        padding: 20px;
+
+        & h1 {
+            font-size: 26px;
+        }
+
+        .menu-option {
+            padding: 10px;
+            width: calc(50% - 20px);
+        }
+
+        .menu-image {
+            width: 80px;
+            height: 80px;
+        }
+
+        .menu-text {
+            font-size: 16px;
+        }
+
+        .button-voltar-menu {
+            font-size: 15px;
+            margin-top: 20px;
+            margin-right: 25px;
+        }
+
+        .solic-vist,
+        .feedback-conteiner,
+        .configuracoes-conteiner {
+            max-width: 550px;
+            padding: 20px;
+            border-radius: 8px;
+
+            & h2 {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+
+            & form {
+                width: 400px;
+                margin: auto;
+                text-align: center;
+                margin-bottom: 20px;
+
+                & input,
+                & select,
+                & textarea {
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    margin-top: 5px;
+                    width: 300px;
+                    font-size: 15px;
+                }
+
+                & textarea {
+                    width: 300px;
+                }
+
+                & .button-container {
+                    margin-top: 20px;
+                }
+
+                & button {
+                    font-size: 15px;
+                    margin-top: 20px;
+                    margin-right: 25px;
+                    width: 200px;
+
+                    &:hover {
+                        background-color: #338056;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/* dispositivos grandes (por exemplo, Desktops) */
+@media (max-width: 992px) {
+    .portalclie-conteiner {
+        max-width: 650px;
+        padding: 20px;
+
+        & h1 {
+            font-size: 28px;
+        }
+
+        .menu-image {
+            width: 90px;
+            height: 90px;
+        }
+
+        .menu-text {
+            font-size: 18px;
+        }
+
+        .button-voltar-menu {
+            font-size: 17px;
+            margin-top: 20px;
+            margin-right: 25px;
         }
     }
 }

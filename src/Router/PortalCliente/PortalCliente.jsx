@@ -13,12 +13,10 @@ export default function PortalCliente() {
         anoFabricacao: ''
     });
 
-    // Função para alternar entre as páginas
     const alterarPagina = (novaPagina) => {
         setPagina(novaPagina);
     };
 
-    // Funções para lidar com alterações nos campos do formulário
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -27,19 +25,15 @@ export default function PortalCliente() {
         });
     };
 
-    const [nota, setNota] = useState(''); // Agora é uma string
+    const [nota, setNota] = useState('');
     const [comentario, setComentario] = useState('');
 
-    // Função para lidar com o envio do formulário de feedback
     const handleSubmitFeedback = (e) => {
         e.preventDefault();
 
-        // Verifica se a nota está dentro do intervalo de 0 a 10
         if (nota >= 0 && nota <= 10) {
-            // Lógica para enviar a nota e o comentário para o servidor
             console.log("Nota válida, enviando feedback:", nota, comentario);
         } else {
-            // Nota fora do intervalo, exibe um alerta
             alert("A nota deve estar entre 0 e 10.");
         }
     };
@@ -52,12 +46,10 @@ export default function PortalCliente() {
     const handleFileChange = (e) => {
         const selectedFile = e.target.files[0];
         if (selectedFile) {
-          // Faça algo com o arquivo selecionado, por exemplo, enviar para o servidor ou processá-lo localmente.
           console.log(`Arquivo selecionado: ${selectedFile.name}`);
         }
       };
 
-    // Componente para representar uma opção de menu
     const MenuOption = ({ texto, imagem, onClick }) => (
         <div className="menu-option" onClick={onClick}>
             <img src={imagem} alt={texto} className="menu-image" />
@@ -67,7 +59,6 @@ export default function PortalCliente() {
 
     let conteudoPagina;
 
-    // Determinar qual conteúdo exibir com base na página atual
     if (pagina === 'solicitar') {
         conteudoPagina = (
             <div className='solic-vist'>
@@ -491,7 +482,6 @@ export default function PortalCliente() {
         window.location.href = '/';
 
     } else {
-        // Página inicial
         conteudoPagina = (
             <div>
                 <h1>Portal do Cliente</h1>

@@ -76,7 +76,7 @@
     }
 }
 
-/* Tamanho da fonte em dispositivos menores (por exemplo, 600px ou menos) */
+/* dispositivos menores (por exemplo, Smartphones) */
 @media (max-width: 600px) {
 
     .cadastro-conteiner {
@@ -119,4 +119,90 @@
         }
     }
 
+}
+
+/* dispositivos medios (por exemplo, Tablets) */
+@media (max-width: 768px){
+    .cadastro-conteiner {
+        max-width: 550px;
+
+        & h1 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        & h3 {
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        & p {
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .form-cadastro {
+            width: 100%;
+            padding: 10px;
+
+            & form {
+                width: 400px;
+
+                & input,
+                select {
+                    width: 100%;
+                    font-size: 16px;
+
+                }
+
+                & button {
+                    font-size: 13px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+/* dispositivos grandes (por exemplo, Desktops) */
+@media (max-width: 992px) {
+    .cadastro-conteiner {
+        max-width: 650px;
+
+        & h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        & h3 {
+            font-size: 17px;
+            margin-top: 20px;
+        }
+
+        & p {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .form-cadastro {
+            width: 100%;
+            padding: 10px;
+
+            & form {
+                width: 400px;
+
+                & input,
+                select {
+                    width: 100%;
+                    font-size: 17px;
+
+                }
+
+                & button {
+                    font-size: 15px;
+                    width: 100px;
+                }
+            }
+        }
+    }
 }

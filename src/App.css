@@ -33,10 +33,6 @@ nav a {
   margin-right: 20px;
 }
 
-.navegacao-links {
-  margin-left: -250px;
-}
-
 nav .navegacao-links a:hover {
   background-color: #ffffff55;
   border-radius: 5px;
@@ -162,7 +158,7 @@ footer p img {
   text-align: center;
 }
 
-/* Extra small devices (phones, 600px e abaixo) */
+/* dispositivos menores (por exemplo, Smartphones) */
 @media (max-width: 600px) {
   /* CABEÇALHO */
   .cabecalho-conteiner {
@@ -208,5 +204,70 @@ footer p img {
 
   footer p img {
     width: 5px;
+  }
+}
+
+/* dispositivos medios (por exemplo, Tablets) */
+@media (max-width: 768px){
+  /* CABEÇALHO */
+  .cabecalho-conteiner {
+    height: 80px;
+  }
+
+  .navegacao-links {
+    margin-left: -140px;
+  }
+
+  nav a {
+    font-size: 0.7em;
+    padding: 10px 15px;
+    margin-right: 5px;
+  }
+
+  .logo {
+    width: 80px;
+    left: 15px;
+  }
+
+  #btnLogin {
+    width: 120px;
+    height: 30px;
+    top: 20px;
+    right: 140px;
+    font-size: 0.9em;
+  }
+
+  #btnLogin img{
+    max-width: 20px;
+    margin-left: -10px;
+  }
+
+  /* RODAPÉ */
+  footer {
+    height: 100%;
+  }
+
+  footer p {
+    margin: 0 6px;
+  }
+
+  footer p img {
+    width: 3px;
+  }
+}
+
+/* dispositivos grandes (por exemplo, Desktops) */
+@media (max-width: 992px) {
+  #btnLogin {
+    width: 120px;
+    height: 30px;
+    top: 20px;
+    right: 80px;
+    font-size: 0.9em;
+  }
+
+  #btnLogin img{
+    max-width: 20px;
+    margin-left: -10px;
   }
 }

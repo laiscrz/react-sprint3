@@ -103,6 +103,7 @@
 
 }
 
+/* dispositivos menores (por exemplo, Smartphones) */
 @media (max-width: 600px) {
   .contato-conteiner {
     max-width: 400px;
@@ -127,7 +128,6 @@
 
     .form-contato {
       width: 100%;
-      /* Use 100% para que o formulário ocupe todo o espaço disponível */
       padding: 10px;
 
       & form {
@@ -143,6 +143,100 @@
 
         & button {
           font-size: 13px;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+/* dispositivos medios (por exemplo, Tablets) */
+@media (max-width: 768px){
+  .contato-conteiner {
+    max-width: 550px;
+    padding: 20px;
+    margin-top: -20px;
+
+    & h1 {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    & h3 {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    & p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .form-contato {
+      width: 100%;
+      padding: 10px;
+
+      & form {
+        width: 280px;
+
+        & input,
+        select,
+        textarea {
+          width: 100%;
+          font-size: 13px;
+
+        }
+
+        & button {
+          font-size: 13px;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+/* dispositivos grandes (por exemplo, Desktops) */
+@media (max-width: 992px) {
+  .contato-conteiner {
+    max-width: 650px;
+    padding: 20px;
+    margin-top: -20px;
+
+    & h1 {
+      font-size: 27px;
+      margin-bottom: 20px;
+    }
+
+    & h3 {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    & p {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .form-contato {
+      width: 100%;
+      padding: 10px;
+
+      & form {
+        width: 300px;
+
+        & input,
+        select,
+        textarea {
+          width: 100%;
+          font-size: 15px;
+
+        }
+
+        & button {
+          font-size: 15px;
           width: 100px;
         }
       }

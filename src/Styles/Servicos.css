@@ -45,8 +45,8 @@
   }
 }
 
-/* Extra small devices (phones, 600px e abaixo) */
-@media (max-width: 600px){
+/* dispositivos menores (por exemplo, Smartphones) */
+@media (max-width: 600px) {
   .servicos-container {
     max-width: 400px;
     padding: 10px;
@@ -55,12 +55,12 @@
       font-size: 24px;
       margin-bottom: 20px;
     }
-  
+
     & h3 {
       font-size: 15px;
       margin-top: 20px;
     }
-  
+
     & p {
       font-size: 13px;
       line-height: 1.5;
@@ -72,19 +72,106 @@
       margin-bottom: 20px;
       padding: 20px;
       box-sizing: border-box;
-  
+
       & h3 {
         font-size: 16px;
         margin-bottom: 10px;
       }
-  
+
       & p {
         font-size: 14px;
         color: #f0f0f0;
       }
 
-      & img{
+      & img {
         width: 300px;
+      }
+    }
+  }
+}
+
+/* dispositivos medios (por exemplo, Tablets) */
+@media (max-width: 768px) {
+  .servicos-container {
+    max-width: 550px;
+    padding: 10px;
+
+    & h1 {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    & h3 {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    & p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    & .servico-item {
+      margin-bottom: 20px;
+      padding: 20px;
+
+      & h3 {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+
+      & p {
+        font-size: 15px;
+        color: #f0f0f0;
+      }
+
+      & img {
+        width: 450px;
+      }
+    }
+  }
+
+}
+
+/* dispositivos grandes (por exemplo, Desktops) */
+@media (max-width: 992px) {
+  .servicos-container {
+    max-width: 650px;
+    padding: 10px;
+
+    & h1 {
+      font-size: 27px;
+      margin-bottom: 20px;
+    }
+
+    & h3 {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    & p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    & .servico-item {
+      margin-bottom: 20px;
+      padding: 20px;
+
+      & h3 {
+        font-size: 19px;
+        margin-bottom: 10px;
+      }
+
+      & p {
+        font-size: 17px;
+        color: #f0f0f0;
+      }
+
+      & img {
+        width: 500px;
       }
     }
   }

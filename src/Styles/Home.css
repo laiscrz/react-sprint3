@@ -110,7 +110,7 @@
 }
 
 
-/* Extra small devices (phones, 600px e abaixo) */
+/* dispositivos menores (por exemplo, Smartphones) */
 @media (max-width: 600px){
 
     .frase-destaq {
@@ -171,5 +171,169 @@
         & p{
             font-size: 13px;
         }
+    }
+}
+
+/* dispositivos medios (por exemplo, Tablets) */
+@media (max-width: 768px){
+    .frase-destaq {
+        margin-bottom: 30px;
+        font-size: 1em;
+        & h1{
+            margin-left: 130px;
+            font-size: 24px;
+        }
+        & h2{
+            margin-left: -240px;
+        }
+    }
+
+    .destaq-bicle {
+        
+        margin-left: 100px;
+    }
+
+    .destaq-bicle img {
+        width: 250px;
+        height: 192px;
+        margin-right: 180px;
+    }
+
+    .quadrad-home{
+        width: 250px;
+        height: 192px;
+        top: 180px;
+        right: 100px;
+    }
+
+    .btn-saibamais button {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 180px;
+        width: 130px;
+    }
+    .carrossel {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+    
+    .carrossel img {
+        width: 300px;
+        
+    }
+
+    .feedbackclie-destaq {
+        width: 400px;
+        & h1{
+            font-size: 1.4em;
+            
+        }
+    
+        & p{
+            font-size: 13px;
+        }
+    }
+}
+
+/* dispositivos grandes (por exemplo, Desktops) */
+@media (max-width: 992px) {
+    .frase-destaq {
+        margin-bottom: 30px;
+        font-size: 0.9em;
+        & h1{
+            margin-left: 150px;
+            font-size: 24px;
+        }
+        & h2{
+            margin-right: -240px;
+        }
+    }
+
+    .destaq-bicle {
+        
+        margin-left: 100px;
+    }
+
+    .destaq-bicle img {
+        width: 250px;
+        height: 192px;
+        margin-right: 60px;
+    }
+
+    .quadrad-home{
+        width: 250px;
+        height: 192px;
+        top: 180px;
+        right: 140px;
+    }
+
+    .btn-saibamais button {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 180px;
+        width: 130px;
+    }
+
+    .carrossel {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+    
+    .carrossel img {
+        width: 300px;
+        
+    }
+
+    .feedbackclie-destaq {
+        width: 550px;
+        & h1{
+            font-size: 1.5em;
+            
+        }
+    
+        & p{
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .frase-destaq {
+        margin-bottom: 30px;
+        font-size: 0.9em;
+        & h1{
+            margin-left: 150px;
+            font-size: 24px;
+        }
+        & h2{
+            margin-right: -240px;
+        }
+    }
+
+    .destaq-bicle {
+        
+        margin-left: 100px;
+    }
+
+    .destaq-bicle img {
+        width: 350px;
+        height: 292px;
+        margin-right: 60px;
+    }
+
+    .quadrad-home{
+        width: 350px;
+        height: 292px;
+        top: 180px;
+        right: 140px;
+    }
+
+    .btn-saibamais button {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 180px;
+        width: 130px;
     }
 }

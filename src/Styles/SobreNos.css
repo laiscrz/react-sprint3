@@ -46,23 +46,14 @@
 
 .elipse-lateral {
   width: 295px;
-  /* Largura da elipse (ou do círculo) */
   height: 281px;
-  /* Altura da elipse (ou do círculo) - mesma dimensão da largura */
   border-radius: 50%;
-  /* 50% para o raio horizontal e vertical para criar um círculo */
   border: 2px solid #39ac6f;
-  /* Adiciona uma borda verde */
   position: absolute;
-  /* Posiciona absolutamente no canto superior esquerdo */
   top: 50%;
-  /* Alinha com o topo */
   right: -100px;
-  /* Alinha com a esquerda */
   background: none;
-  /* Remove a cor de fundo */
   z-index: -1;
-  /* Coloca a elipse atrás de outros elementos, como a sua header */
 }
 
 .logoInov-faix {
@@ -71,11 +62,10 @@
 
 .logoInov-faix img {
   width: 180px;
-  /* Largura da imagem */
   height: 140px;
-  /* Altura da imagem */
 }
 
+/* dispositivos menores (por exemplo, Smartphones) */
 @media (max-width: 600px) {
   .sobrenos-conteiner {
     max-width: 400px;
@@ -98,4 +88,52 @@
     }
   }
 
+}
+
+/* dispositivos medios (por exemplo, Tablets) */
+@media (max-width: 768px){
+  .sobrenos-conteiner {
+    max-width: 550px;
+    padding: 20px;
+    margin-top: 5px;
+
+    & h1 {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+  
+    & h3 {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  
+    & p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/* dispositivos grandes (por exemplo, Desktops) */
+@media (max-width: 992px) {
+  .sobrenos-conteiner {
+    max-width: 650px;
+    padding: 20px;
+    margin-top: 5px;
+
+    & h1 {
+      font-size: 27px;
+      margin-bottom: 20px;
+    }
+  
+    & h3 {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  
+    & p {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+  }
 }

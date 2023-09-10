@@ -13,6 +13,7 @@ import Login from './Router/Login/Login.jsx'
 import Error from './Router/Error/Error.jsx'
 import Cadrastro from './Router/Cadastro/Cadastro.jsx'
 import PortalCliente from './Router/PortalCliente/PortalCliente.jsx'
+import Integrantes from './Router/Integrantes/Integrantes.jsx'
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: '/PortalCliente',
         element: <PortalCliente/>
+      },
+      {
+        path: '/Integrantes',
+        element: <Integrantes/>
       },
       {
         path: '/antiga',

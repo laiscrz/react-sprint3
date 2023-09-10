@@ -21,7 +21,7 @@ export default function Contato() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Verifique se os campos obrigatórios estão preenchidos
+    
     if (
       formData.nome === '' ||
       formData.telefone === '' ||
@@ -29,12 +29,11 @@ export default function Contato() {
       formData.assunto === ''
     ) {
       window.alert('Por favor, preencha todos os campos obrigatórios.'); // Mostra um alerta
-      return; // Sai da função sem enviar o formulário
+      return;
     }
 
     console.log('Dados enviados:', formData);
 
-    // Você pode adicionar aqui o código para enviar os dados para o servidor, se necessário.
   };
 
   return (

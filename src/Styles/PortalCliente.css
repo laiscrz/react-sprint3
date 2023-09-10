@@ -34,7 +34,6 @@
 .menu-options {
     display: flex;
     flex-wrap: wrap;
-    /* Permite que as opções se ajustem automaticamente à largura do conteiner */
     justify-content: space-between;
     gap: 20px;
     margin-top: 20px;
@@ -46,8 +45,8 @@
     border-radius: 8px;
     padding: 10px;
     text-align: center;
-    width: calc(33.33% - 20px);
-    /* Ajusta a largura das opções para que três caibam por linha, com uma margem entre elas */
+    width: calc(25% - 20px);
+    /* Ajuste a largura para ocupar 25% do espaço */
     transition: transform 0.2s ease-in-out;
     box-sizing: border-box;
 }
@@ -91,7 +90,9 @@
     }
 }
 
-.solic-vist {
+.solic-vist,
+.feedback-conteiner,
+.configuracoes-conteiner {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -140,7 +141,7 @@
         }
 
         & .button-container {
-            margin-top: 100px;
+            margin-top: 20px;
         }
 
         & button {
@@ -162,7 +163,8 @@
     }
 }
 
-.acompanhar-vist,.histo-vist {
+.acompanhar-vist,
+.histo-vist {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -181,7 +183,8 @@
         border-collapse: collapse;
         margin-top: 20px;
 
-        & th, & td {
+        & th,
+        & td {
             padding: 10px;
             border: 1px solid white;
         }
@@ -195,10 +198,14 @@
             background-color: rgb(91, 91, 91);
             color: white;
         }
-        & td button.ver-detalhes , button.ver-diagnostico{
+
+        & td button.ver-detalhes,
+        button.ver-diagnostico {
             /* Estilo para o botão "Ver Detalhes" dentro das células da tabela */
-            background-color: #488757; /* Cor de fundo azul */
-            margin-left: 10px; /* Espaçamento à esquerda */
+            background-color: #488757;
+            /* Cor de fundo azul */
+            margin-left: 10px;
+            /* Espaçamento à esquerda */
             color: #fff;
             font-size: 14px;
             border: none;
@@ -209,9 +216,13 @@
         }
     }
 
-    & button .ver-detalhes, button .ver-diagnostico { /* Estilo para o botão "Ver Detalhes" */
-        background-color: #338056; /* Cor de fundo azul */
-        margin-left: 10px; /* Espaçamento à esquerda */
+    & button .ver-detalhes,
+    button .ver-diagnostico {
+        /* Estilo para o botão "Ver Detalhes" */
+        background-color: #338056;
+        /* Cor de fundo azul */
+        margin-left: 10px;
+        /* Espaçamento à esquerda */
     }
 
     & .button-container {
@@ -235,3 +246,188 @@
     }
 }
 
+/* Estilos para a página FAQ */
+.faq-conteiner,
+.suporte-conteiner {
+    padding: 20px;
+    text-align: left;
+    /* Alinhar o texto à esquerda */
+    color: #488757;
+    /* Alterar a cor do texto para legibilidade */
+
+    & h2 {
+        font-size: 28px;
+        color: #39ac6f;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    & ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    & li {
+        margin-bottom: 20px;
+    }
+
+    & strong {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    & p {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    & a {
+        color: #ddd;
+    }
+
+    /* Estilos para botões dentro da FAQ */
+    & .button-container {
+        margin-top: 20px;
+        text-align: center;
+
+        & button {
+            background-color: #39ac6f;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 60px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+
+            &:hover {
+                background-color: #338056;
+            }
+
+            /* Estilos para links dentro da FAQ */
+            & a {
+                color: #39ac6f;
+                /* Cor dos links */
+                text-decoration: underline;
+                /* Adicionar sublinhado a links */
+            }
+        }
+
+    }
+}
+
+.btn-chatbot {
+    background-color: #39ac6f;
+    color: #000000;
+    font-size: 18px;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+    /* Centralizar o botão horizontalmente */
+    width: 200px;
+    height: 45px;
+
+    &:hover {
+        background-color: #338056;
+    }
+
+    & span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    & img {
+        max-width: 30px;
+        height: auto;
+    }
+}
+
+/* Tamanho em dispositivos menores (por exemplo, 600px ou menos) */
+@media (max-width: 600px) {
+    .portalclie-conteiner {
+        max-width: 500px;
+        padding: 20px;
+
+        & h1 {
+            font-size: 24px;
+        }
+
+        .menu-option {
+            padding: 10px;
+            width: calc(50% - 20px);
+        }
+
+        .menu-image {
+            width: 70px;
+            height: 70px;
+        }
+
+        .menu-text {
+            font-size: 15px;
+        }
+
+        .button-voltar-menu {
+            font-size: 15px;
+            margin-top: 20px;
+            margin-right: 25px;
+        }
+
+        .solic-vist,
+        .feedback-conteiner,
+        .configuracoes-conteiner {
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+
+            & h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            & form {
+                width: 300px;
+                margin: auto;
+                text-align: center;
+                margin-bottom: 20px;
+
+                & input,
+                & select,
+                & textarea {
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    margin-top: 5px;
+                    width: 260px;
+                    font-size: 13px;
+                }
+
+                & textarea {
+                    width: 300px;
+                }
+
+                & .button-container {
+                    margin-top: 20px;
+                }
+
+                & button {
+                    font-size: 15px;
+                    margin-top: 20px;
+                    margin-right: 25px;
+                    width: 200px;
+
+                    &:hover {
+                        background-color: #338056;
+                    }
+
+                }
+            }
+        }
+    }
+}

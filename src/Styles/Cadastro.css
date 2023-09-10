@@ -24,7 +24,6 @@
         border: 1px solid white;
         border-radius: 60px;
         width: auto;
-        /* Aumente o tamanho da largura da borda branca */
         height: auto;
         padding: 50px;
 
@@ -33,7 +32,7 @@
             margin: auto;
             padding: auto;
             display: inline-block;
-            text-align: center; /* Centraliza o conteúdo horizontalmente */
+            text-align: center;
 
             & label {
                 color: aliceblue;
@@ -55,6 +54,8 @@
                 margin-top: 5px;
                 width: 300px;
                 font-size: 16px;
+                background-color: gray;
+                border: 1px solid white;
             }
 
             & button {
@@ -73,4 +74,49 @@
             }
         }
     }
+}
+
+/* Tamanho da fonte em dispositivos menores (por exemplo, 600px ou menos) */
+@media (max-width: 600px) {
+
+    .cadastro-conteiner {
+        max-width: 400px;
+
+        & h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        & h3 {
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        & p {
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .form-cadastro {
+            width: 100%;
+            padding: 10px;
+
+            & form {
+                width: 280px;
+
+                & input,
+                select {
+                    width: 100%;
+                    font-size: 13px;
+
+                }
+
+                & button {
+                    font-size: 13px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+
 }

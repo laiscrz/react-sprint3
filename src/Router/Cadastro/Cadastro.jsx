@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import '/src/Styles/Cadastro.css';
+import { Link } from 'react-router-dom';
 
 export default function Cadastro() {
-    const [clientes, setClientes] = useState([]); // Array para armazenar os dados dos clientes
+    const [clientes, setClientes] = useState([]);
     const [cliente, setCliente] = useState({
         nome: '',
         email: '',
@@ -21,21 +22,17 @@ export default function Cadastro() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Calcular a idade do cliente com base na data de nascimento
         const dataNascimento = new Date(cliente.dataNascimento);
         const hoje = new Date();
         const idade = hoje.getFullYear() - dataNascimento.getFullYear();
 
-        // Verificar se a idade é menor que 18
         if (idade < 18) {
             alert('Você não pode se cadastrar, pois não tem idade suficiente.');
             return;
         }
 
-        // Adicionar o cliente ao array
         setClientes([...clientes, cliente]);
 
-        // Limpar o formulário
         setCliente({
             nome: '',
             email: '',
@@ -46,15 +43,15 @@ export default function Cadastro() {
             senha: '',
         });
 
-        // Recarregar a página após o envio bem-sucedido
-        window.location.reload();
+        // Redirecionar apenas se os dados estiverem corretos
+        window.location.href = "/PortalCliente";
     };
 
     return (
         <main className="cadastro">
             <div className="cadastro-conteiner">
                 <h1>Cadastro de Cliente</h1>
-                <p>Preencha os Dados Abaixo Corretamente.</p>
+                <p>Preencha os Dados Abaixo Corretamente.</p><br />
                 <div className="form-cadastro">
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
@@ -134,7 +131,9 @@ export default function Cadastro() {
                                 required
                             />
                         </div><br />
-                        <button type="submit">Cadastrar</button>
+                        <span>
+                            <button type="submit">Cadastrar</button>
+                        </span>
                     </form>
                 </div>
             </div>

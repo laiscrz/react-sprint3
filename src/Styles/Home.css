@@ -43,6 +43,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 20px;
+    margin-left: 50px;
 
     &:hover {
         background-color: #338056;
@@ -73,13 +74,13 @@
     z-index: -1;
 }
 
-.carousel {
+.carrossel {
     width: 100%;
     overflow: hidden;
     position: relative;
   }
 
-.carousel img {
+.carrossel img {
     width: 400px;
     display: block;
     margin: 0 auto;
@@ -105,5 +106,70 @@
 
     & p{
         color: #fff;
+    }
+}
+
+
+/* Extra small devices (phones, 600px e abaixo) */
+@media (max-width: 600px){
+
+    .frase-destaq {
+        margin-bottom: 20px;
+        font-size: 0.9em;
+        & h1{
+            margin-left: 180px;
+            font-size: 25px;
+        }
+        & h2{
+            margin-left: -320px;
+        }
+    }
+
+    .destaq-bicle {
+        
+        margin-left: 100px;
+    }
+
+    .destaq-bicle img {
+        width: 250px;
+        height: 192px;
+        margin-right: 160px;
+    }
+
+    .quadrad-home{
+        width: 250px;
+        height: 192px;
+        top: 180px;
+        right: 60px;
+    }
+
+    .btn-saibamais button {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 180px;
+        width: 130px;
+    }
+
+    .carrossel {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+    
+    .carrossel img {
+        width: 300px;
+        
+    }
+
+    .feedbackclie-destaq {
+        width: 400px;
+        & h1{
+            font-size: 1.4em;
+            
+        }
+    
+        & p{
+            font-size: 13px;
+        }
     }
 }

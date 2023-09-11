@@ -18,7 +18,6 @@ O sistema Inova-X visa transformar a maneira como as bicicletas são inspecionad
    ```bash
    npm install
 
-   ```bash
    npm install react-router-dom
 
 ## Executando o Projeto

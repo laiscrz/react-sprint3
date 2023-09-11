@@ -12,3 +12,17 @@ O sistema Inova-X visa transformar a maneira como as bicicletas são inspecionad
 
    ```bash
    git clone https://github.com/laiscrz/react-sprint3.git
+
+## Instalando as Dependências
+* Dentro do diretório do projeto, execute os seguintes comandos para instalar as dependências:
+   ```bash
+   npm install
+
+   ```bash
+   npm install react-router-dom
+
+## Executando o Projeto
+* Para executar o projeto, utilize o seguinte comando:
+   ```bash
+   npm run dev
+

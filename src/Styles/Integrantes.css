@@ -22,6 +22,11 @@
         color: #f0f0f0;
         margin-bottom: 20px;
     }
+
+    & a{
+        color: #74ba84;
+        text-decoration: none;
+    }
 }
 
 /* dispositivos menores (por exemplo, Smartphones) */

@@ -1,6 +1,6 @@
-# Inova-X: Sistema de Vistoria de Bikes Online com Reconhecimento de Imagem
+# 🚴🏻 Inova-X: Site de Vistoria de Bikes Online
 
-Bem-vindo ao repositório de desenvolvimento do sistema de vistoria de bikes online da empresa Inova-X. Este projeto faz parte do Challenge da Poro Seguro, que será entregue na sprint 3 do curso da Faculdade FIAP. O objetivo do sistema é automatizar o processo de vistoria de bicicletas, utilizando tecnologias avançadas de reconhecimento de imagem para identificar avarias sem a necessidade de intervenção humana.
+Bem-vindo ao repositório de desenvolvimento do site de vistoria de bikes online da empresa Inova-X. Este projeto faz parte do Challenge da Porto Seguro, que foi entregue na sprint 3 do curso de ADS da Faculdade FIAP. O objetivo do sistema no geral é automatizar o processo de vistoria de bicicletas, utilizando tecnologias avançadas de reconhecimento de imagem para identificar avarias sem a necessidade de intervenção humana, o presente projeto representa o site do projeto.
 
 ## Visão Geral
 
